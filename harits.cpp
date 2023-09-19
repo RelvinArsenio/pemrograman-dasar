@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     cin.getline(nama, sizeof(nama));
     cout << "NIM: ";
     cin >> nim;
-    cout << "Plug: (Kelas Pratikum Algo): ";
+    cout << "Plug (Kelas Pratikum Algo): ";
     cin >> plug;
     cout << "2 angka terakhir NIM dan angka favorite (2 digit): \n";
     cin >> x;
@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
     printf("b = (a - y) * 2 = (%d - %d) * 2 = %d\n", a, y, b);
     printf("c = b + x / 6 = %d + %d / 6 = %d\n", b, x, c);
     printf("d = c / 8 + b / 13 = %d / 8 + %d / 13 = %d\n", c, b, d);
-
+    printf("Hasil akhir: %d\n", d);
 
     return 0;
 }
