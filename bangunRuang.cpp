@@ -31,13 +31,12 @@ int main() {
             case 1: {
                 int panjang, lebar;
                 cout << "Menghitung Luas Persegi Panjang : " << endl;
-                    cout << "Masukkan nilai panjang : ";
-                    cin >> panjang;
-                    cout << "Masukkan nilai lebar : ";
-                    cin >> lebar;
-                    int luas_persegi_panjang = panjang * lebar;
-                    cout << "Luas Persegi Panjang : " << luas_persegi_panjang << endl;
-                    break;
+                cout << "Masukkan nilai panjang : ";
+                cin >> panjang;
+                cout << "Masukkan nilai lebar : ";
+                cin >> lebar;
+                int luas_persegi_panjang = panjang * lebar;
+                cout << "Luas Persegi Panjang : " << luas_persegi_panjang << endl;
                 break;
             }
             case 2: {
