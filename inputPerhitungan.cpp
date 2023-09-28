@@ -24,11 +24,13 @@ int main(int argc, char const *argv[])
     int c = b + x / 6;
     int d = c / 8 + b / 13;
 
-    cout << setw(12) << setfill('-') << "" << "Biodata" << setw(12) << setfill('-') << "" << endl;
+    cout << setw(12) << setfill('-') << ""
+         << "Biodata" << setw(12) << setfill('-') << "" << endl;
     cout << "Nama: " << nama << endl;
     cout << "NIM: " << nim << endl;
     cout << "Plug: " << plug << endl;
-    cout << setw(10) << setfill('-') << "" << "PERHITUNGAN" << setw(10) << setfill('-') << "" << endl;
+    cout << setw(10) << setfill('-') << ""
+         << "PERHITUNGAN" << setw(10) << setfill('-') << "" << endl;
     cout << "2 angka terakhir NIM (x): " << x << endl;
     cout << "Angka Favorite (y): " << y << endl;
     cout << "Dari 2 angka diatas, dilakukan perhitungan: \n";
