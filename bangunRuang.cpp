@@ -31,12 +31,13 @@ int main() {
             case 1: {
                 int panjang, lebar;
                 cout << "Menghitung Luas Persegi Panjang : " << endl;
-                cout << "Masukkan nilai panjang : ";
-                cin >> panjang;
-                cout << "Masukkan nilai lebar : ";
-                cin >> lebar;
-                int luas_persegi_panjang = panjang * lebar;
-                cout << "Luas Persegi Panjang : " << luas_persegi_panjang << endl;
+                    cout << "Masukkan nilai panjang : ";
+                    cin >> panjang;
+                    cout << "Masukkan nilai lebar : ";
+                    cin >> lebar;
+                    int luas_persegi_panjang = panjang * lebar;
+                    cout << "Luas Persegi Panjang : " << luas_persegi_panjang << endl;
+                    break;
                 break;
             }
             case 2: {
@@ -44,7 +45,7 @@ int main() {
                 cout << "Menghitung Luas Lingkaran : " << endl;
                 cout << "Masukkan nilai jari-jari : ";
                 cin >> jari_jari;
-                float luas_lingkaran = 3.14 * jari_jari * jari_jari;
+                float luas_lingkaran = M_PI * pow(jari_jari, 2);
                 cout << "Luas Lingkaran : " << luas_lingkaran << endl;
                 break;
             }
@@ -70,7 +71,7 @@ int main() {
         cout << "Menghitung Volume Bangun Ruang : " << endl;
         cout << "1. Kubus" << endl;
         cout << "2. Tabung" << endl;
-        cout << "3. Balok" << endl;
+        cout << "3. Bola" << endl;
         cout << "Pilihan : ";
         cin >> subPilihan;
         cout << endl;
@@ -92,21 +93,17 @@ int main() {
                 cin >> jari_jari_tabung;
                 cout << "Masukkan tinggi tabung : ";
                 cin >> tinggi_tabung;
-                float volume_tabung = 3.14 * pow(jari_jari_tabung, 2) * tinggi_tabung;
+                float volume_tabung = M_PI * pow(jari_jari_tabung, 2) * tinggi_tabung;
                 cout << "Volume Tabung : " << volume_tabung << endl;
                 break;
             }
             case 3: {
-                float panjang_balok, lebar_balok, tinggi_balok;
-                cout << "Menghitung Volume Balok : " << endl;
-                cout << "Masukkan panjang balok : ";
-                cin >> panjang_balok;
-                cout << "Masukkan lebar balok : ";
-                cin >> lebar_balok;
-                cout << "Masukkan tinggi balok : ";
-                cin >> tinggi_balok;
-                float volume_balok = panjang_balok * lebar_balok * tinggi_balok;
-                cout << "Volume Balok : " << volume_balok << endl;
+                float jari;
+                cout << "Menghitung Volume Bola : " << endl;
+                cout << "Masukkan jari-jari bola : ";
+                cin >> jari;
+                float volume = (4.0 / 3.0) * M_PI * pow(jari, 3);
+                cout << "Volume Bola : " << volume << endl;
                 break;
             }
             default: {
